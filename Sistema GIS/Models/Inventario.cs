@@ -6,6 +6,7 @@ namespace Sistema_GIS.Models
     [Table("Inventario")]
     internal class Inventario
     {
+        
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int idInventario { get; set; }
