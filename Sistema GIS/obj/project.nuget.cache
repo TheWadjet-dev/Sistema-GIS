@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "iGa29ac+SQ6Cr85ghWsrWnj0lC9aVqeUUbLIEG/DaIRxRo/qbZAoDYHL0ZrMyUDJsqMzNcZyzh4QuLCCX2rjmQ==",
+  "dgSpecHash": "/viOFDiS89NlXLhVdlUP8OoGp+ICToH5KTkupccSUHt2v7bi33bz89FF0SiQfTXtXnICoDEmyIv1rIr7CB8bqg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Stiwar Saltos\\Documents\\GitHub\\Sistema-GIS\\Sistema GIS\\Sistema GIS.csproj",
+  "projectFilePath": "C:\\Users\\Erick\\source\\repos\\Sistema-GIS\\Sistema GIS\\Sistema GIS.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Stiwar Saltos\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.5\\microsoft.visualstudio.azure.containers.tools.targets.1.19.5.nupkg.sha512"
+    "C:\\Users\\Erick\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.5\\microsoft.visualstudio.azure.containers.tools.targets.1.19.5.nupkg.sha512"
   ],
   "logs": []
 }
