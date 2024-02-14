@@ -1,10 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "iGa29ac+SQ6Cr85ghWsrWnj0lC9aVqeUUbLIEG/DaIRxRo/qbZAoDYHL0ZrMyUDJsqMzNcZyzh4QuLCCX2rjmQ==",
+  "dgSpecHash": "v3z+XST4ozJdlbipBcyMzesXvTmfPrjfNn7NMZO8VmdOyYXnHcX0iDVgdTtGyEBZFe3qxIzJGbA0Ru63zFYMJQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Stiwar Saltos\\Documents\\GitHub\\Sistema-GIS\\Sistema GIS\\Sistema GIS.csproj",
+  "projectFilePath": "D:\\Universidad\\Marcos De Desarrollo II\\Proyecto\\Proyecto6\\Sistema GIS\\Sistema GIS.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Stiwar Saltos\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.5\\microsoft.visualstudio.azure.containers.tools.targets.1.19.5.nupkg.sha512"
+    "C:\\Users\\david\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.5\\microsoft.visualstudio.azure.containers.tools.targets.1.19.5.nupkg.sha512",
+    "C:\\Users\\david\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.15\\microsoft.windowsdesktop.app.ref.7.0.15.nupkg.sha512",
+    "C:\\Users\\david\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.15\\microsoft.netcore.app.ref.7.0.15.nupkg.sha512",
+    "C:\\Users\\david\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.15\\microsoft.aspnetcore.app.ref.7.0.15.nupkg.sha512",
+    "C:\\Users\\david\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.15\\microsoft.netcore.app.host.win-x64.7.0.15.nupkg.sha512"
   ],
   "logs": []
 }
