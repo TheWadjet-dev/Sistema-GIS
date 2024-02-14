@@ -4,5 +4,6 @@
     {
         //Intento de prueba git
         public string pancito = "Gey";
+        public int ci;
     }
 }
