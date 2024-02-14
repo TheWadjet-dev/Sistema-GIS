@@ -3,5 +3,6 @@
     public class Prueba
     {
         //Intento de prueba git
+        public int id;
     }
 }
