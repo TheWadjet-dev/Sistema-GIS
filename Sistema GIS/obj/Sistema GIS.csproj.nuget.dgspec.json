@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Universidad\\Marcos De Desarrollo II\\Proyecto\\Proyecto6\\Sistema GIS\\Sistema GIS.csproj": {}
+    "C:\\Users\\Erick\\source\\repos\\Sistema-GIS\\Sistema GIS\\Sistema GIS.csproj": {}
   },
   "projects": {
-    "D:\\Universidad\\Marcos De Desarrollo II\\Proyecto\\Proyecto6\\Sistema GIS\\Sistema GIS.csproj": {
+    "C:\\Users\\Erick\\source\\repos\\Sistema-GIS\\Sistema GIS\\Sistema GIS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Universidad\\Marcos De Desarrollo II\\Proyecto\\Proyecto6\\Sistema GIS\\Sistema GIS.csproj",
+        "projectUniqueName": "C:\\Users\\Erick\\source\\repos\\Sistema-GIS\\Sistema GIS\\Sistema GIS.csproj",
         "projectName": "Sistema GIS",
-        "projectPath": "D:\\Universidad\\Marcos De Desarrollo II\\Proyecto\\Proyecto6\\Sistema GIS\\Sistema GIS.csproj",
-        "packagesPath": "C:\\Users\\david\\.nuget\\packages\\",
-        "outputPath": "D:\\Universidad\\Marcos De Desarrollo II\\Proyecto\\Proyecto6\\Sistema GIS\\obj\\",
+        "projectPath": "C:\\Users\\Erick\\source\\repos\\Sistema-GIS\\Sistema GIS\\Sistema GIS.csproj",
+        "packagesPath": "C:\\Users\\Erick\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Erick\\source\\repos\\Sistema-GIS\\Sistema GIS\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\david\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Erick\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,6 +44,16 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.16, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.16, )"
+            },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.19.5, )"
@@ -56,24 +70,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.15, 7.0.15]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[7.0.15, 7.0.15]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[7.0.15, 7.0.15]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[7.0.15, 7.0.15]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
