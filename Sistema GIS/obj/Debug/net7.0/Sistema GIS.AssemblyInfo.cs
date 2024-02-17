@@ -15,4 +15,10 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Sistema GIS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5f6553b60dcb38fe6500c34062e27d187b4d3667")]
+[assembly: System.Reflection.AssemblyProductAttribute("Sistema GIS")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Sistema GIS")]
+[assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
+
+// Generado por la clase WriteCodeFragment de MSBuild.
 
