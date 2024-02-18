@@ -5,9 +5,12 @@ using Sistema_GIS.Utilidades.Response;
 using Sistema_GIS.BussinesLogic.Interfaz;
 using Sistema_GIS.Entity;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Sistema_GIS.Controllers
 {
+    [Authorize]
+
     public class CategoriaController
     {
         private readonly IMapper _mapper;

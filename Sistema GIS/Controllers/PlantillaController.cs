@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Sistema_GIS.Controllers
 {
+
     public class PlantillaController : Controller
     {
         public IActionResult EnviarClave(string correo, string clave)

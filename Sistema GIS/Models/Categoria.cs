@@ -10,7 +10,7 @@ namespace Sistema_GIS.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int IdCategoria { get; set; }
 
-        [StringLength(50)]
+        [StringLength(100)]
         public string Descripcion { get; set; }
 
         public bool Activo { get; set; } = true;

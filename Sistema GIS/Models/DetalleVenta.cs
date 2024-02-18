@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Sistema_GIS.Models
 {
-    [Table("DetalleVenta")]
+    [Table("Detalle_Venta")]
     public class DetalleVenta
     {
         [Key]
@@ -13,25 +13,21 @@ namespace Sistema_GIS.Models
         [ForeignKey("IdVenta")]
         public int IdVenta { get; set; }
 
-        public virtual Ventum Venta { get; set; }
+        public virtual Venta Venta { get; set; }
 
         [ForeignKey("IdProducto")]
         public int IdProducto { get; set; }
 
         public virtual Producto Producto { get; set; }
 
-        [StringLength(100)]
-        public string MarcaProducto { get; set; }
-
-        [StringLength(100)]
-        public string DescripcionProducto { get; set; }
-
-        [StringLength(100)]
-        public string CategoriaProducto { get; set; }
         public int Cantidad { get; set; }
 
-        public float Precio { get; set; }
+        public float PrecioUnidad { get; set; }
 
-        public float Total { get; set; }
+        public float ImporteTotal { get; set; }
+
+        public bool Activo { get; set; } = true;
+
+        public DateTime FechaRegistro { get; set; } = DateTime.Now;
     }
 }

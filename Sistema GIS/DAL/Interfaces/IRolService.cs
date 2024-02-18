@@ -1,4 +1,4 @@
-﻿using Sistema_GIS.Entity;
+﻿using Sistema_GIS.Entity:
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,4 +13,3 @@ namespace Sistema_GIS.Datos.Interfaces
         Task<List<Rol>> Lista();
     }
 }
-
