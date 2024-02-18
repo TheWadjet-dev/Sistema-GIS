@@ -5,7 +5,7 @@ namespace Sistema_GIS.Models
 {
     [Table("TipoDocumentoVentum")]
 
-    public class TipoDocumentoVentum
+    public class TipoDocumentoVenta
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

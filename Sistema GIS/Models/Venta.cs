@@ -16,7 +16,7 @@ namespace Sistema_GIS.Models
         [ForeignKey("IdTipoDocumentoVenta")]
         public int IdTipoDocumentoVenta { get; set; }
 
-        public virtual TipoDocumentoVentum TipoDocumentoVentum { get; set; }
+        public virtual TipoDocumentoVenta TipoDocumentoVentum { get; set; }
 
         [ForeignKey("IdUsuario")]
         public int IdUsuario { get; set; }

@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 namespace Sistema_GIS.Models
 {
     [Table("Categoria")]
-    public class Categorium
+    public class Categoria
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

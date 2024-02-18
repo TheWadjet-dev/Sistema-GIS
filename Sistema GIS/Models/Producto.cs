@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using Sistema_GIS.Models;
 
 namespace Sistema_GIS.Models
 {
@@ -11,23 +12,22 @@ namespace Sistema_GIS.Models
         public int IdProducto { get; set; }
 
         [StringLength(100)]
-        public string Codigo { get; set; }
-
-        public int ValorCodigo { get; set; }
-
+        public string? CodigoBarra { get; set; }
+        [StringLength(50)]
+        public string? Marca { get; set; }
         [StringLength(100)]
-        public string Nombre { get; set; }
-
-        [StringLength(100)]
-        public string Descripcion { get; set; }
-
+        public string? Descripcion { get; set; }
         [ForeignKey("IdCategoria")]
-        public int IdCategoria { get; set; }
+        public int? IdCategoria { get; set; }
+        public int? Stock { get; set; }
+        [StringLength(250)]
+        public string? UrlImagen { get; set; }
+        [StringLength(100)]
+        public string? NombreImagen { get; set; }
+        public decimal? Precio { get; set; }
+        public bool? EsActivo { get; set; }
+        public DateTime? FechaRegistro { get; set; }
 
-        public virtual Categoria Categoria { get; set; }
-
-        public bool Activo { get; set; } = true;
-
-        public DateTime FechaRegistro { get; set; } = DateTime.Now;
+        public virtual Categoria? IdCategoriaNavigation { get; set; }
     }
 }
