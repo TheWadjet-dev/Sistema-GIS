@@ -17,6 +17,8 @@ namespace Sistema_GIS.Controllers
         {
             _usuarioServicio = usuarioServicio;
         }
+
+
         public IActionResult Login()
         {
             ClaimsPrincipal claimUser = HttpContext.User;
@@ -28,6 +30,16 @@ namespace Sistema_GIS.Controllers
 
             return View();
         }
+
+
+        public IActionResult RestablecerClave()
+        {
+            
+
+            return View();
+        }
+
+
 
         [HttpPost]
         public async Task<IActionResult> Login(VMUsuarioLogin modelo)
@@ -44,7 +56,7 @@ namespace Sistema_GIS.Controllers
             List<Claim> claims = new List<Claim>()
             {
                 new Claim(ClaimTypes.Name, usuario_encontrado.Nombre),
-                new Claim(ClaimTypes.NameIdentifier, usuario_encontrado.IdUsuario.ToString(),
+                new Claim(ClaimTypes.NameIdentifier, usuario_encontrado.IdUsuario.ToString()),
                 new Claim(ClaimTypes.Role, usuario_encontrado.IdRol.ToString()),
                 new Claim("UrlFoto", usuario_encontrado.UrlFoto)
             };
@@ -65,5 +77,38 @@ namespace Sistema_GIS.Controllers
 
             return RedirectToAction("Index","Home");
         }
+
+        [HttpPost]
+        public async Task<IActionResult> RestablecerClave(VMUsuarioLogin modelo)
+        {
+            try
+            {
+                string urlPlantillaCorreo = $"{this.Request.Scheme}://{this.Request.Host}/Plantilla/RestablecerClave?clave=[clave]";
+
+                bool resultado = await _usuarioServicio.RestablecerClave(modelo.Correo, urlPlantillaCorreo);
+
+                if (resultado)
+                {
+                    ViewData["Mensaje"] = "Listo, contraseña restablecida";
+                    ViewData["MensajeError"] = null;
+                }
+                else
+                {
+                    ViewData["MensajeError"] = "tenemos problemas. Por favor intente otra vez";
+                    ViewData["Mensaje"] = null;
+                }
+      
+
+            }
+            catch(Exception ex)
+            {
+                ViewData["MensajeError"] = ex.Message;
+                ViewData["Mensaje"] = null;
+            }
+            
+            return View();
+        }
+
+
     }
 }
