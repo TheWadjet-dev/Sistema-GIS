@@ -13,7 +13,7 @@ namespace Sistema_GIS.Models
             [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
             public int IdProducto { get; set; }
 
-           public string CodigoBarra { get; set; }
+            public string CodigoBarra { get; set; }
 
             public string Marca { get; set; }
 
@@ -22,10 +22,10 @@ namespace Sistema_GIS.Models
             public string Descripcion { get; set; }
 
             [ForeignKey("IdCategoria")]
-           public int IdCategoria { get; set; }
-          public virtual Categoria Categoria { get; set; }
+            public int IdCategoria { get; set; }
+            public virtual Categoria Categoria { get; set; }
 
-           public int Stock { get; set; }
+            public int Stock { get; set; }
 
             [StringLength(500)]
             public string UrlImagen { get; set; }
@@ -39,6 +39,7 @@ namespace Sistema_GIS.Models
             public bool EsActivo { get; set; } = true;
 
             public DateTime FechaRegistro { get; set; } = DateTime.Now;
-        }
+            public virtual Categoria? IdCategoriaNavigation { get; set; }
+    }
     }
 

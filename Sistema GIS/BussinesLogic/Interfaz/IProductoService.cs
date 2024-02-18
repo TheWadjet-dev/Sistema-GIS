@@ -1,5 +1,4 @@
-﻿using Sistema_GIS.Entity;
-using Sistema_GIS.Models;
+﻿using Sistema_GIS.Models;
 
 namespace Sistema_GIS.BussinesLogic.Interfaz
 {
@@ -7,7 +6,7 @@ namespace Sistema_GIS.BussinesLogic.Interfaz
     {
         Task<List<Producto>> Lista();
         Task<Producto> Crear(Producto entidad, Stream imagen = null, string NombreImagen = "");
-        Task<Producto> Editar(Producto entidad, Stream imagen = null);
+        Task<Producto> Editar(Producto entidad, Stream imagen = null, string NombreImagen = "");
         Task<bool> Eliminar(int idProducto);
     }
 }
