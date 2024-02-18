@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Sistema_GIS.Models
 {
-    [Table("TipoDocumentoVentum")]
+    [Table("TipoDocumentoVenta")]
 
     public class TipoDocumentoVenta
     {
