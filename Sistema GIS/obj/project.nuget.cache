@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "ncoq9f4w2POkXv4FqgRjhGJSh8YGocLNJg2MkCSHbQxA5kiuz/W8kfB6G4/MEsRPg6SdVGIIsz24i3bnlPPj5A==",
+  "dgSpecHash": "Jpra9cR89HUAM7KK9NZPhwRr11p/ug6+lf1Oz/uV9Zddl+7IrYX2JC+t4i6I952zmxLRnusHWsFfp0epcN/CiQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Erick\\source\\repos\\Sistema-GIS\\Sistema GIS\\Sistema GIS.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Erick\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\Erick\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\Erick\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\Erick\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Erick\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.1\\microsoft.entityframeworkcore.7.0.1.nupkg.sha512",
     "C:\\Users\\Erick\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.1\\microsoft.entityframeworkcore.abstractions.7.0.1.nupkg.sha512",
     "C:\\Users\\Erick\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.1\\microsoft.entityframeworkcore.analyzers.7.0.1.nupkg.sha512",

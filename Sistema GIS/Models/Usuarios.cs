@@ -11,14 +11,16 @@ namespace Sistema_GIS.Models
         public int IdUsuario { get; set; }
 
         [StringLength(60)]
-        public string Nombres { get; set; }
+        public string Nombre { get; set; }
 
         [StringLength(60)]
-        public string Apellidos { get; set; }
+        public string Apellido { get; set; }
 
         [StringLength(60)]
         public string Correo { get; set; }
 
+        [StringLength(60)]
+        public string telefono { get; set; }
         [StringLength(60)]
         public string Usuario { get; set; }
 
