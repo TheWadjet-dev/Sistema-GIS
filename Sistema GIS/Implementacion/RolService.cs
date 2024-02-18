@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using Sistema_GIS.BLL.Interfaces;
+using Sistema_GIS.BussinesLogic.Interfaz;
 using Sistema_GIS.DAL.Interfaces;
 using Sistema_GIS.Interfaces;
-using sistemaVentas.Entity;
+using Sistema_GIS.Entity;
 
 namespace Sistema_GIS.Implementacion
 {
