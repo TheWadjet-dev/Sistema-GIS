@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\source\\repos\\Sistema-GIS\\Sistema GIS\\Sistema GIS.csproj": {}
+    "C:\\Users\\Stiwar Saltos\\Documents\\GitHub\\Sistema-GIS\\Sistema GIS\\Sistema GIS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\source\\repos\\Sistema-GIS\\Sistema GIS\\Sistema GIS.csproj": {
+    "C:\\Users\\Stiwar Saltos\\Documents\\GitHub\\Sistema-GIS\\Sistema GIS\\Sistema GIS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\source\\repos\\Sistema-GIS\\Sistema GIS\\Sistema GIS.csproj",
+        "projectUniqueName": "C:\\Users\\Stiwar Saltos\\Documents\\GitHub\\Sistema-GIS\\Sistema GIS\\Sistema GIS.csproj",
         "projectName": "Sistema GIS",
-        "projectPath": "C:\\Users\\HP\\source\\repos\\Sistema-GIS\\Sistema GIS\\Sistema GIS.csproj",
-        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\source\\repos\\Sistema-GIS\\Sistema GIS\\obj\\",
+        "projectPath": "C:\\Users\\Stiwar Saltos\\Documents\\GitHub\\Sistema-GIS\\Sistema GIS\\Sistema GIS.csproj",
+        "packagesPath": "C:\\Users\\Stiwar Saltos\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Stiwar Saltos\\Documents\\GitHub\\Sistema-GIS\\Sistema GIS\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Stiwar Saltos\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -65,6 +66,10 @@
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.19.5, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[7.0.12, )"
             }
           },
           "imports": [
@@ -86,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
