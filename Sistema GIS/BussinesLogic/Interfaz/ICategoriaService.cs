@@ -1,4 +1,4 @@
-﻿using Sistema_GIS.Models;
+﻿using Sistema_GIS.Entity;
 
 namespace Sistema_GIS.BussinesLogic.Interfaz
 {

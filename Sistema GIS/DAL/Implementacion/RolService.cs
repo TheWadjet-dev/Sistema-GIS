@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Sistema_GIS.BLL.Interfaces;
 using Sistema_GIS.DAL.Interfaces;
 using Sistema_GIS.Datos.Interfaces;
+using Sistema_GIS.Models;
 using sistemaVentas.Entity;
 
 namespace Sistema_GIS.Datos.Implementacion
