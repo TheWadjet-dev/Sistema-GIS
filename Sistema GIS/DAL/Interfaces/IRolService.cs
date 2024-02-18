@@ -1,4 +1,9 @@
-﻿using Sistema_GIS.Models;
+﻿using Sistema_GIS.Entity:
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 
 namespace Sistema_GIS.Datos.Interfaces

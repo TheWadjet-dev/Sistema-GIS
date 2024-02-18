@@ -39,15 +39,3 @@ C:\Users\bryan\source\repos\Sistema-GIS\Sistema GIS\obj\Debug\net7.0\refint\Sist
 C:\Users\bryan\source\repos\Sistema-GIS\Sistema GIS\obj\Debug\net7.0\Sistema GIS.pdb
 C:\Users\bryan\source\repos\Sistema-GIS\Sistema GIS\obj\Debug\net7.0\Sistema GIS.genruntimeconfig.cache
 C:\Users\bryan\source\repos\Sistema-GIS\Sistema GIS\obj\Debug\net7.0\ref\Sistema GIS.dll
-C:\Users\Stiwar Saltos\Documents\GitHub\Sistema-GIS\Sistema GIS\obj\Debug\net7.0\Sistema GIS.csproj.AssemblyReference.cache
-C:\Users\Stiwar Saltos\Documents\GitHub\Sistema-GIS\Sistema GIS\obj\Debug\net7.0\Sistema GIS.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Stiwar Saltos\Documents\GitHub\Sistema-GIS\Sistema GIS\obj\Debug\net7.0\Sistema GIS.AssemblyInfoInputs.cache
-C:\Users\Stiwar Saltos\Documents\GitHub\Sistema-GIS\Sistema GIS\obj\Debug\net7.0\Sistema GIS.AssemblyInfo.cs
-C:\Users\Stiwar Saltos\Documents\GitHub\Sistema-GIS\Sistema GIS\obj\Debug\net7.0\Sistema GIS.csproj.CoreCompileInputs.cache
-C:\Users\Stiwar Saltos\Documents\GitHub\Sistema-GIS\Sistema GIS\obj\Debug\net7.0\Sistema GIS.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Stiwar Saltos\Documents\GitHub\Sistema-GIS\Sistema GIS\obj\Debug\net7.0\Sistema GIS.RazorAssemblyInfo.cache
-C:\Users\Stiwar Saltos\Documents\GitHub\Sistema-GIS\Sistema GIS\obj\Debug\net7.0\Sistema GIS.RazorAssemblyInfo.cs
-C:\Users\Stiwar Saltos\Documents\GitHub\Sistema-GIS\Sistema GIS\obj\Debug\net7.0\Sistema GIS.sourcelink.json
-C:\Users\Stiwar Saltos\Documents\GitHub\Sistema-GIS\Sistema GIS\obj\Debug\net7.0\Sistema GIS.dll
-C:\Users\Stiwar Saltos\Documents\GitHub\Sistema-GIS\Sistema GIS\obj\Debug\net7.0\refint\Sistema GIS.dll
-C:\Users\Stiwar Saltos\Documents\GitHub\Sistema-GIS\Sistema GIS\obj\Debug\net7.0\Sistema GIS.pdb

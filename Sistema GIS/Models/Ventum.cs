@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 namespace Sistema_GIS.Models
 {
     [Table("Venta")]
-    public class Venta
+    public class Ventum
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -16,7 +16,7 @@ namespace Sistema_GIS.Models
         [ForeignKey("IdTipoDocumentoVenta")]
         public int IdTipoDocumentoVenta { get; set; }
 
-        public virtual TipoDocumentoVenta TipoDocumentoVentum { get; set; }
+        public virtual TipoDocumentoVentum TipoDocumentoVentum { get; set; }
 
         [ForeignKey("IdUsuario")]
         public int IdUsuario { get; set; }

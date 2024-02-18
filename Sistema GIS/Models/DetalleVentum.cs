@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 namespace Sistema_GIS.Models
 {
     [Table("DetalleVenta")]
-    public class DetalleVenta
+    public class DetalleVentum
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

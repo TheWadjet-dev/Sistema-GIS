@@ -1,5 +1,6 @@
 ﻿using Sistema_GIS.Models.ViewModels;
 using Sistema_GIS.Models;
+using Sistema_GIS.Entity;
 using System.Globalization;
 using AutoMapper;
 
