@@ -15,9 +15,6 @@ namespace Sistema_GIS.IOC
         {
             services.AddScoped<ICategoriaService, CategoriaService>();
             services.AddScoped<IProductoService, ProductoService>();
-
-
-            services.AddScoped<IDashBoardService, DashBoardService>();
         }   
     }
 }
