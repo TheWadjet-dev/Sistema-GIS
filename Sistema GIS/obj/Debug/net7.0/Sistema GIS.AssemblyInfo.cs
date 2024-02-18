@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Sistema GIS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+20b593fa79487c2dc9b2a2d44b2ea5f8e1a8b301")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4dd189a7ac8606188cd2e54df12e3b34ae8ee5ff")]
 [assembly: System.Reflection.AssemblyProductAttribute("Sistema GIS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Sistema GIS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
