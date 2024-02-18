@@ -3,15 +3,24 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Sistema_GIS.Models
 {
-    [Table("Categoria")]
-    public class Categoria
+    [Table("Tienda")]
+    public class Tienda
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int IdCategoria { get; set; }
+        public int IdTienda { get; set; }
+
+        [StringLength(60)]
+        public string Nombre { get; set; }
+
+        [StringLength(60)]
+        public string RUC { get; set; }
 
         [StringLength(100)]
-        public string Descripcion { get; set; }
+        public string Direccion { get; set; }
+
+        [StringLength(50)]
+        public string Telefono { get; set; }
 
         public bool Activo { get; set; } = true;
 
