@@ -13,7 +13,7 @@ using Sistema_GIS.Entity;
 using Sistema_GIS.Interfaces;
 using System.Linq.Expressions;
 
-namespace Sistema_GIS.Implementacion
+namespace Sistema_GIS.DAL.Implementacion
 {
     public class UsuarioService : IUsuarioService
     {
@@ -35,7 +35,7 @@ namespace Sistema_GIS.Implementacion
             _fireBaseService = fireBaseService;
             _utilidadesService = utilidadesService;
             _correoService = correoService;
-                
+
         }
 
         public async Task<List<IUsuario>> Lista()
@@ -46,10 +46,10 @@ namespace Sistema_GIS.Implementacion
         }
         public async Task<Usuarios> Crear(Usuarios entidad, Stream Foto = null, string NombreFoto = "", string UrlPlantillaCorreo = "")
         {
-           Usuarios usuario_existe = await _repositorio.Obtener(u => u.Correo == entidad.Correo);
+            Usuarios usuario_existe = await _repositorio.Obtener(u => u.Correo == entidad.Correo);
 
             if (usuario_existe != null)
-            
+
                 throw new TaskCanceledException("El correo ya existe");
             try
             {
@@ -59,7 +59,7 @@ namespace Sistema_GIS.Implementacion
 
                 if (Foto != null)
                 {
-                    String urlFoto = await _fireBaseService.SubirStorage(Foto, "carpeta_usuario", NombreFoto);
+                    string urlFoto = await _fireBaseService.SubirStorage(Foto, "carpeta_usuario", NombreFoto);
                     entidad.UrlFoto = urlFoto;
                 }
                 Usuarios usuario_creado = await _repositorio.Crear(entidad);
@@ -83,8 +83,8 @@ namespace Sistema_GIS.Implementacion
                             StreamReader readerStream = null;
 
                             if (response.CharacterSet == null)
-                            readerStream = new StreamReader(dataStream);
-                            else 
+                                readerStream = new StreamReader(dataStream);
+                            else
                                 readerStream = new StreamReader(dataStream, Encoding.GetEncoding(response.CharacterSet));
 
                             htmlCorreo = readerStream.ReadToEnd();
@@ -102,15 +102,15 @@ namespace Sistema_GIS.Implementacion
                 return usuario_creado;
             }
 
-            catch(Exception ex) 
+            catch (Exception ex)
             {
                 throw;
-            } 
+            }
 
-            
+
         }
 
-        public  async Task<Usuarios> Editar(Usuarios entidad, Stream Foto = null, string NombreFoto = "")
+        public async Task<Usuarios> Editar(Usuarios entidad, Stream Foto = null, string NombreFoto = "")
         {
             Usuarios usuario_existe = await _repositorio.Obtener(u => u.Correo == entidad.Correo && u.IdUsuario != entidad.IdUsuario);
 
@@ -132,7 +132,7 @@ namespace Sistema_GIS.Implementacion
 
                 if (Foto != null)
                 {
-                    String urlFoto = await _fireBaseService.SubirStorage(Foto, "carpeta_usuario", usuario_editar.NombreFoto);
+                    string urlFoto = await _fireBaseService.SubirStorage(Foto, "carpeta_usuario", usuario_editar.NombreFoto);
                     usuario_editar.UrlFoto = urlFoto;
                 }
                 bool respuesta = await _repositorio.Editar(usuario_editar);
@@ -176,14 +176,14 @@ namespace Sistema_GIS.Implementacion
         {
             string clave_encriptada = _utilidadesService.ConvertirSha256(clave);
 
-            Usuarios usuario_encontrado = await _repositorio.Obtener( u => u.Correo.Equals(correo)&& u.Clave.Equals(clave_encriptada));
+            Usuarios usuario_encontrado = await _repositorio.Obtener(u => u.Correo.Equals(correo) && u.Clave.Equals(clave_encriptada));
 
             return usuario_encontrado;
         }
 
         public async Task<Usuarios> ObtenerPorId(int IdUsuario)
         {
-           IQueryable<Usuarios> query = await _repositorio.Consultar(u => u.IdUsuario == IdUsuario);
+            IQueryable<Usuarios> query = await _repositorio.Consultar(u => u.IdUsuario == IdUsuario);
 
             Usuarios resultado = query.Include(r => r.IdNavigation).FirstOrDefault();
             return resultado;
@@ -203,7 +203,7 @@ namespace Sistema_GIS.Implementacion
                 bool respuesta = await _repositorio.Editar(usuario_encontrado);
                 return respuesta;
             }
-            catch 
+            catch
             {
                 throw;
             }
@@ -212,12 +212,12 @@ namespace Sistema_GIS.Implementacion
 
         public async Task<bool> CambiarClave(int IdUsuario, string ClaveActual, string ClaveNueva)
         {
-            try 
-            { 
-            Usuarios usuario_encontrado = await _repositorio.Obtener(u => u.IdUsuario == IdUsuario);
+            try
+            {
+                Usuarios usuario_encontrado = await _repositorio.Obtener(u => u.IdUsuario == IdUsuario);
 
-            if(usuario_encontrado == null)
-                throw new TaskCanceledException("El usuario no existe");
+                if (usuario_encontrado == null)
+                    throw new TaskCanceledException("El usuario no existe");
 
                 if (usuario_encontrado.Clave != _utilidadesService.ConvertirSha256(ClaveActual))
                     throw new TaskCanceledException("La contraseña ingresada como actual no es correcta");
@@ -228,7 +228,7 @@ namespace Sistema_GIS.Implementacion
 
 
             }
-            catch(Exception ex) 
+            catch (Exception ex)
             {
                 throw;
             }
@@ -237,7 +237,7 @@ namespace Sistema_GIS.Implementacion
         {
             try
             {
-                Usuarios usuario_encontrado = await _repositorio.Obtener(u =>u.Correo == Correo);
+                Usuarios usuario_encontrado = await _repositorio.Obtener(u => u.Correo == Correo);
 
                 if (usuario_encontrado == null)
                     throw new TaskCanceledException("No encontramos ningun usuario asociado al correo");
@@ -284,7 +284,7 @@ namespace Sistema_GIS.Implementacion
             }
             catch
             {
-                throw; 
+                throw;
             }
         }
     }
