@@ -1,4 +1,4 @@
-﻿namespace Sistema_GIS.BussinesLogic.Implementacion
+﻿namespace Sistema_GIS.BussinesLogic.Implementacion;
 using Sistema_GIS.BussinesLogic.Interfaz;
 using Sistema_GIS.DAL.Implementacion;
 using Sistema_GIS.DAL.Interfaces;
@@ -7,7 +7,7 @@ using System;
 using System.Net;
 using System.Net.Mail;
 
-{
+
 using System.Threading.Tasks;
 
 public class CorreoService : ICorreoService
@@ -40,6 +40,7 @@ public class CorreoService : ICorreoService
             {
                 Host = Config["host"],
                 Port = int.Parse(Config["puerto"]),
+                Credentials = credenciales,
                 DeliveryMethod = SmtpDeliveryMethod.Network,
                 UseDefaultCredentials = false,
                 EnableSsl = true
