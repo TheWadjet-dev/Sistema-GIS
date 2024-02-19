@@ -1,7 +1,5 @@
 ﻿using Sistema_GIS.BussinesLogic.Interfaz;
 using Sistema_GIS.DAL.Interfaces;
-using Sistema_GIS.Datos.Interfaces;
-using Sistema_GIS.Entity;
 using Sistema_GIS.Models;
 namespace Sistema_GIS.BussinesLogic.Implementacion
 {
@@ -19,7 +17,7 @@ namespace Sistema_GIS.BussinesLogic.Implementacion
         {
             try
             {
-                CategoriaService categoria_creada = await _repository.Crear(entidad);
+                Categoria categoria_creada = await _repository.Crear(entidad);
                 if(categoria_creada.IdCategoria == 0)
                     throw new TaskCanceledException("No se pudo crear la categoria");
                 return categoria_creada;
@@ -33,9 +31,9 @@ namespace Sistema_GIS.BussinesLogic.Implementacion
         {
             try
             {
-                CategoriaService categoria_encontrada = await _repository.Obtener(c => c.IdCategoria == entidad.IdCategoria);
+                Categoria categoria_encontrada = await _repository.Obtener(c => c.IdCategoria == entidad.IdCategoria);
                 categoria_encontrada.Descripcion = entidad.Descripcion;
-                categoria_encontrada.EsActivo = entidad.EsActivo;
+                categoria_encontrada.Activo = entidad.Activo;
                 bool respuesta = await _repository.Editar(categoria_encontrada);
 
                 if (!respuesta)
@@ -51,7 +49,7 @@ namespace Sistema_GIS.BussinesLogic.Implementacion
         {
             try
             {
-                CategoriaService categoria_encontrada = await _repository.Obtener(c => c.IdCategoria == IdCategoria);
+                Categoria categoria_encontrada = await _repository.Obtener(c => c.IdCategoria == idCategoria);
                 if(categoria_encontrada == null)
                     throw new TaskCanceledException("La categoria no existe");
                 bool respuesta = await _repository.Eliminar(categoria_encontrada);
@@ -66,6 +64,7 @@ namespace Sistema_GIS.BussinesLogic.Implementacion
         public async Task<List<Categoria>> Lista()
         {
             IQueryable<Categoria> query = await _repository.Consultar();
+            return query.ToList();
         }
     }
 }

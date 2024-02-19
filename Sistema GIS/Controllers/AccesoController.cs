@@ -44,7 +44,7 @@ namespace Sistema_GIS.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(VMUsuarioLogin modelo)
         {
-            Usuarios usuario_encontrado = await _usuarioServicio.ObtenerPorCredenciales(modelo.Correo, modelo.Clave);
+            Usuario usuario_encontrado = await _usuarioServicio.ObtenerPorCredenciales(modelo.Correo, modelo.Clave);
 
             if(usuario_encontrado == null)
             {
@@ -58,7 +58,7 @@ namespace Sistema_GIS.Controllers
                 new Claim(ClaimTypes.Name, usuario_encontrado.Nombre),
                 new Claim(ClaimTypes.NameIdentifier, usuario_encontrado.IdUsuario.ToString()),
                 new Claim(ClaimTypes.Role, usuario_encontrado.IdRol.ToString()),
-                new Claim("UrlFoto", usuario_encontrado.UrlFoto)
+                new Claim("urlFoto", usuario_encontrado.urlFoto)
             };
 
             ClaimsIdentity.claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);

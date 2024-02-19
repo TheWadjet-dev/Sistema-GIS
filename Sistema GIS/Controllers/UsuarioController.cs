@@ -5,8 +5,7 @@ using Sistema_GIS.Models.ViewModels;
 using Sistema_GIS.Models;
 using Sistema_GIS.Utilidades.Response;
 using Sistema_GIS.BussinesLogic.Interfaz;
-using Sistema_GIS.Entity
-using Sistema_GIS.Datos.Interfaces;:
+using Sistema_GIS.Datos.Interfaces;
 
 
 

@@ -43,7 +43,7 @@ namespace Sistema_GIS.BussinesLogic.Implementacion
             }
         }
 
-        public async Task<Producto> Editar(Producto entidad, Stream imagen = null)
+        public async Task<Producto> Editar(Producto entidad, Stream imagen = null, string NombreImagen = "")
         {
             Producto producto_existe = await _repository.Obtener(p => p.CodigoBarra == entidad.CodigoBarra && p.IdProducto != entidad.IdProducto);
             if (producto_existe != null)

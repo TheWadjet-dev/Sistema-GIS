@@ -3,12 +3,11 @@ using AutoMapper;
 using Sistema_GIS.Models.ViewModels;
 using Sistema_GIS.Utilidades.Response;
 using Sistema_GIS.BussinesLogic.Interfaz;
-using Sistema_GIS.Entity;
-using Microsoft.AspNetCore.Mvc.Infrastructure;
+using Sistema_GIS.Models;
 
 namespace Sistema_GIS.Controllers
 {
-    public class CategoriaController
+    public class CategoriaController: Controller
     {
         private readonly IMapper _mapper;
         private readonly ICategoriaService _categoriaService;
@@ -38,7 +37,7 @@ namespace Sistema_GIS.Controllers
 
             try
             {
-                CategoriaController categoria_creada = await _categoriaService.Crear(_mapper.Map<Categoria>(modelo));
+                Categoria categoria_creada = await _categoriaService.Crear(_mapper.Map<Categoria>(modelo));
                 modelo = _mapper.Map<VMCategoria>(categoria_creada);
 
                 gResponse.Estado = true;
@@ -46,7 +45,7 @@ namespace Sistema_GIS.Controllers
             }catch (Exception ex)
             {
                 gResponse.Estado = false;
-                gResponse.Objeto = ex.Message;
+                gResponse.Mensaje = ex.Message;
             }
             return StatusCode(StatusCodes.Status200OK, gResponse);
         }
@@ -58,7 +57,7 @@ namespace Sistema_GIS.Controllers
 
             try
             {
-                CategoriaController categoria_editada = await _categoriaService.Crear(_mapper.Map<Categoria>(modelo));
+                Categoria categoria_editada = await _categoriaService.Crear(_mapper.Map<Categoria>(modelo));
                 modelo = _mapper.Map<VMCategoria>(categoria_editada);
 
                 gResponse.Estado = true;
@@ -67,7 +66,7 @@ namespace Sistema_GIS.Controllers
             catch (Exception ex)
             {
                 gResponse.Estado = false;
-                gResponse.Objeto = ex.Message;
+                gResponse.Mensaje = ex.Message;
             }
             return StatusCode(StatusCodes.Status200OK, gResponse);
         }
